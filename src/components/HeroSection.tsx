@@ -1,17 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Gift, TrendingUp, Shield } from "lucide-react";
 import heroImage from "@/assets/hero-wellness.jpg";
-
 export const HeroSection = () => {
-  return (
-    <section className="relative min-h-screen bg-gradient-to-br from-background to-muted overflow-hidden">
+  return <section className="relative min-h-screen bg-gradient-to-br from-background to-muted overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 opacity-10">
-        <img 
-          src={heroImage} 
-          alt="Wellness Benefits" 
-          className="w-full h-full object-cover"
-        />
+        <img src={heroImage} alt="Wellness Benefits" className="w-full h-full object-cover" />
       </div>
       
       {/* Gradient Overlay */}
@@ -27,8 +21,8 @@ export const HeroSection = () => {
           </div>
           
           {/* Main Headline */}
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-foreground leading-tight">
-            Ganhe <span className="bg-gradient-primary bg-clip-text text-transparent">R$ 20</span> e Mais 
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight text-zinc-950">
+            Ganhe <span className="bg-gradient-primary bg-clip-text text-zinc-400">R$ 20</span> e Mais 
             <br />
             <span className="text-2xl md:text-4xl lg:text-5xl text-muted-foreground">
               Benefícios com Nossos
@@ -74,23 +68,14 @@ export const HeroSection = () => {
           
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button 
-              asChild
-              variant="premium" 
-              size="xl"
-              className="shadow-glow"
-            >
+            <Button asChild variant="premium" size="xl" className="shadow-glow">
               <a href="#produtos" className="flex items-center gap-2">
                 Ver Produtos Exclusivos
                 <ArrowRight className="w-5 h-5" />
               </a>
             </Button>
             
-            <Button 
-              asChild
-              variant="outline" 
-              size="lg"
-            >
+            <Button asChild variant="outline" size="lg">
               <a href="https://renda-boost.lovable.app" target="_blank" rel="noopener noreferrer">
                 Ganhar R$ 20 Agora
               </a>
@@ -105,6 +90,5 @@ export const HeroSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
