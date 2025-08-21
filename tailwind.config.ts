@@ -63,6 +63,26 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				}
 			},
+			backgroundImage: {
+				'gradient-primary': 'var(--gradient-primary)',
+				'gradient-secondary': 'var(--gradient-secondary)',
+				'gradient-accent': 'var(--gradient-accent)',
+				'gradient-success': 'var(--gradient-success)',
+			},
+			boxShadow: {
+				'elegant': 'var(--shadow-elegant)',
+				'premium': 'var(--shadow-premium)',
+				'glow': 'var(--shadow-glow)',
+			},
+			fontSize: {
+				'hero': 'var(--text-hero)',
+				'heading': 'var(--text-heading)',
+				'subheading': 'var(--text-subheading)',
+			},
+			transitionProperty: {
+				'smooth': 'var(--transition-smooth)',
+				'bounce': 'var(--transition-bounce)',
+			},
 			borderRadius: {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
